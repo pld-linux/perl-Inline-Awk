@@ -1,11 +1,29 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Inline
-%define	pname	Awk
-Summary:	Inline::Awk perl module
-Summary(pl):	Modu³ perla Inline::Awk
+%define		pdir	Inline
+%define		pname	Awk
+Summary:	Inline::Awk Perl module
+Summary(cs):	Modul Inline::Awk pro Perl
+Summary(da):	Perlmodul Inline::Awk
+Summary(de):	Inline::Awk Perl Modul
+Summary(es):	Módulo de Perl Inline::Awk
+Summary(fr):	Module Perl Inline::Awk
+Summary(it):	Modulo di Perl Inline::Awk
+Summary(ja):	Inline::Awk Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Inline::Awk ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul Inline::Awk
+Summary(pl):	Modu³ Perla Inline::Awk
+Summary(pt):	Módulo de Perl Inline::Awk
+Summary(pt_BR):	Módulo Perl Inline::Awk
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Inline::Awk
+Summary(sv):	Inline::Awk Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Inline::Awk
+Summary(zh_CN):	Inline::Awk Perl Ä£¿é
 Name:		perl-Inline-Awk
 Version:	0.03
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
@@ -29,6 +47,7 @@ Perlu.
 %build
 perl Makefile.PL
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -47,4 +66,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_sitelib}/Inline/Awk.pm
 %{_mandir}/man3/*
-%{_examplesdir}/%{name}-%{version}
+%dir %{_examplesdir}/%{name}-%{version}
+%attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*
