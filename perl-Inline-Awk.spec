@@ -25,7 +25,8 @@ Summary(zh_CN):	Inline::Awk Perl Ä£¿é
 Name:		perl-Inline-Awk
 Version:	0.03
 Release:	3
-License:	Artistic or GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
 # Source0-md5:	e98d19ea7b03b967c2aa4af872d11930
