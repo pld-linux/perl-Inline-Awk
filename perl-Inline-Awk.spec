@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Inline
-%define		pname	Awk
+%define		pnam	Awk
 Summary:	Inline::Awk Perl module
 Summary(cs):	Modul Inline::Awk pro Perl
 Summary(da):	Perlmodul Inline::Awk
@@ -28,7 +28,7 @@ Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e98d19ea7b03b967c2aa4af872d11930
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Inline
@@ -45,7 +45,7 @@ Modu³ Inline::Awk - pozwalaj±cy na u¿ywanie kodu awka w programach w
 Perlu.
 
 %prep
-%setup -q -n %{pdir}-%{pname}-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 %{__perl} Makefile.PL \
