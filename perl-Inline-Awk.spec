@@ -13,7 +13,7 @@ Summary(fr):	Module Perl Inline::Awk
 Summary(it):	Modulo di Perl Inline::Awk
 Summary(ja):	Inline::Awk Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Inline::Awk ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Inline::Awk
+Summary(nb):	Perlmodul Inline::Awk
 Summary(pl):	Modu³ Perla Inline::Awk
 Summary(pt):	Módulo de Perl Inline::Awk
 Summary(pt_BR):	Módulo Perl Inline::Awk
