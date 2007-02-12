@@ -6,22 +6,22 @@
 %define		pdir	Inline
 %define		pnam	Awk
 Summary:	Inline::Awk Perl module
-Summary(cs):	Modul Inline::Awk pro Perl
-Summary(da):	Perlmodul Inline::Awk
-Summary(de):	Inline::Awk Perl Modul
-Summary(es):	MÛdulo de Perl Inline::Awk
-Summary(fr):	Module Perl Inline::Awk
-Summary(it):	Modulo di Perl Inline::Awk
-Summary(ja):	Inline::Awk Perl •‚•∏•Â°º•Î
-Summary(ko):	Inline::Awk ∆ﬁ ∏¡Ÿ
-Summary(nb):	Perlmodul Inline::Awk
-Summary(pl):	Modu≥ Perla Inline::Awk
-Summary(pt):	MÛdulo de Perl Inline::Awk
-Summary(pt_BR):	MÛdulo Perl Inline::Awk
-Summary(ru):	Ìœƒ’Ãÿ ƒÃ— Perl Inline::Awk
-Summary(sv):	Inline::Awk Perlmodul
-Summary(uk):	Ìœƒ’Ãÿ ƒÃ— Perl Inline::Awk
-Summary(zh_CN):	Inline::Awk Perl ƒ£øÈ
+Summary(cs.UTF-8):   Modul Inline::Awk pro Perl
+Summary(da.UTF-8):   Perlmodul Inline::Awk
+Summary(de.UTF-8):   Inline::Awk Perl Modul
+Summary(es.UTF-8):   M√≥dulo de Perl Inline::Awk
+Summary(fr.UTF-8):   Module Perl Inline::Awk
+Summary(it.UTF-8):   Modulo di Perl Inline::Awk
+Summary(ja.UTF-8):   Inline::Awk Perl „É¢„Ç∏„É•„Éº„É´
+Summary(ko.UTF-8):   Inline::Awk ÌéÑ Î™®Ï§Ñ
+Summary(nb.UTF-8):   Perlmodul Inline::Awk
+Summary(pl.UTF-8):   Modu≈Ç Perla Inline::Awk
+Summary(pt.UTF-8):   M√≥dulo de Perl Inline::Awk
+Summary(pt_BR.UTF-8):   M√≥dulo Perl Inline::Awk
+Summary(ru.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl Inline::Awk
+Summary(sv.UTF-8):   Inline::Awk Perlmodul
+Summary(uk.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl Inline::Awk
+Summary(zh_CN.UTF-8):   Inline::Awk Perl Ê®°Âùó
 Name:		perl-Inline-Awk
 Version:	0.03
 Release:	4
@@ -40,8 +40,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Inline::Awk - Add awk code to your Perl programs.
 
-%description -l pl
-Modu≥ Inline::Awk - pozwalaj±cy na uøywanie kodu awka w programach w
+%description -l pl.UTF-8
+Modu≈Ç Inline::Awk - pozwalajƒÖcy na u≈ºywanie kodu awka w programach w
 Perlu.
 
 %prep
