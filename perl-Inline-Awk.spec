@@ -24,7 +24,7 @@ Summary(uk.UTF-8):	Модуль для Perl Inline::Awk
 Summary(zh_CN.UTF-8):	Inline::Awk Perl 模块
 Name:		perl-Inline-Awk
 Version:	0.03
-Release:	4
+Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
