@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Inline
 %define		pnam	Awk
+%include	/usr/lib/rpm/macros.perl
 Summary:	Inline::Awk Perl module
 Summary(cs.UTF-8):	Modul Inline::Awk pro Perl
 Summary(da.UTF-8):	Perlmodul Inline::Awk
@@ -30,8 +30,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e98d19ea7b03b967c2aa4af872d11930
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Inline-Awk/
 BuildRequires:	perl-Inline
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	awk
 BuildArch:	noarch
@@ -61,7 +62,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
