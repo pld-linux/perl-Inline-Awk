@@ -4,7 +4,6 @@
 
 %define		pdir	Inline
 %define		pnam	Awk
-%include	/usr/lib/rpm/macros.perl
 Summary:	Inline::Awk Perl module
 Summary(cs.UTF-8):	Modul Inline::Awk pro Perl
 Summary(da.UTF-8):	Perlmodul Inline::Awk
